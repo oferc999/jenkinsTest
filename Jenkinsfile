@@ -1,6 +1,4 @@
-node {
-   echo 'Hello World'
-}
+
 
 stage('Hello') {
     node {
