@@ -13,3 +13,9 @@ stage('Ofer') {
         echo 'Hello Ofer'
     }
 }
+
+stage('shell script') {
+    node {
+        sh 'ls -l'
+    }
+}
