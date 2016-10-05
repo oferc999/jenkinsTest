@@ -17,6 +17,5 @@ stage('shell script') {
         sh 'ls -l'
         sh 'sleep 5'
         sh 'pwd'
-        sh 'error_cmd'
     }
 }
