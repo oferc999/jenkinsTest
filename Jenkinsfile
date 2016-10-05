@@ -15,7 +15,8 @@ stage('Ofer') {
 stage('shell script') {
     node {
         sh 'ls -l'
-        sh 'sleep 35'
+        sh 'sleep 5'
         sh 'pwd'
+        sh 'error_cmd'
     }
 }
