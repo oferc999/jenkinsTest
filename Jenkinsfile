@@ -7,7 +7,7 @@ stage('Hello') {
 }
 
 stage('Ofer') {
-    node {
+    node { 
         echo 'Hello Ofer'
     }
 }
