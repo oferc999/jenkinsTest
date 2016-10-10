@@ -10,6 +10,8 @@ stage('build docker') {
     node { 
         echo 'Hello Ofer'
         def myEnv = docker.build 'my-environment:snapshot'
+        echo 'goinf to sleep 5 minutes'
+        sh 'sleep 300'
     }
 }
 
