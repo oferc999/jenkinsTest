@@ -9,6 +9,7 @@ stage('Hello') {
 stage('Ofer') {
     node { 
         echo 'Hello Ofer'
+        def myEnv = docker.build 'my-environment:snapshot'
     }
 }
 
