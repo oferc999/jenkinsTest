@@ -10,9 +10,9 @@ stage('build docker') {
     node { 
         echo 'Hello Ofer'
         // This step should not normally be used in your script. Consult the inline help for details.
-        //withDockerContainer(args: '--cap-add=SYS_ADMIN –P -d', image: 'checkpoint/centos-jenkins-agent') {
+        withDockerContainer(args: '--cap-add=SYS_ADMIN –P -d', image: 'checkpoint/centos-jenkins-agent') {
             // some block
-       // }
+        }
         
         
        // def postgres = docker.image('postgres:latest')
@@ -21,7 +21,7 @@ stage('build docker') {
             // …as above
         //}
         echo 'goinf to sleep 5 minutes'
-        sh 'sleep 300'
+        sh 'sleep 60'
     }
 }
 
