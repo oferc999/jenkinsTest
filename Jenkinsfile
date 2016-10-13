@@ -12,7 +12,7 @@ stage('build docker') {
         // This step should not normally be used in your script. Consult the inline help for details.
         //withDockerContainer(args: '--cap-add=SYS_ADMIN –P -d', image: 'checkpoint/centos-jenkins-agent') {
             // some block
-        }
+       // }
         
         
        // def postgres = docker.image('postgres:latest')
