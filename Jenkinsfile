@@ -10,7 +10,7 @@ stage('build docker') {
     node { 
         echo 'Hello Ofer'
         // This step should not normally be used in your script. Consult the inline help for details.
-        withDockerContainer(args: '--cap-add=SYS_ADMIN –P -d', image: 'checkpoint/centos-jenkins-agent') {
+        //withDockerContainer(args: '--cap-add=SYS_ADMIN –P -d', image: 'checkpoint/centos-jenkins-agent') {
             // some block
         }
         
